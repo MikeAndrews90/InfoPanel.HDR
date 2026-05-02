@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <!-- Private=false prevents InfoPanel.Plugins.dll from being copied to output.
+         The host process provides it at load time via the default assembly context. -->
+    <ProjectReference Include="..\InfoPanel.Plugins\InfoPanel.Plugins.csproj">
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>InfoPanel.HDR</AssemblyName>
+    <RootNamespace>InfoPanel.HDR</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="PluginInfo.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

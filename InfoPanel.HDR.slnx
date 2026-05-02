@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="InfoPanel.HDR/InfoPanel.HDR.csproj" />
+  <Project Path="InfoPanel.Plugins/InfoPanel.Plugins.csproj" />
+</Solution>
