@@ -40,4 +40,4 @@ Copy the contents of the build output folder into your InfoPanel plugins directo
 
 ## Author
 
-Andre — v1.0.0
+Mike Andrews — v1.0.0
